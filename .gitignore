@@ -1,0 +1,76 @@
+# =============================================================
+# Root .gitignore — Polymer Discovery AI
+# =============================================================
+
+# ── Environment & Secrets ─────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python & Bytecode ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Machine Learning Artifacts & Datasets ─────────────────────
+# Datasets are auto-downloaded on first run by data/loader.py
+data/raw/*
+!data/raw/.gitkeep
+
+# Saved trained model weights
+saved_models/*
+!saved_models/.gitkeep
+
+# Temporary generation files
+/tmp/polymer_app
+*.tmp
+
+# ── Frontend (Vite + React) ───────────────────────────────────
+node_modules/
+**/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Operating System & Editors ────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
